@@ -17,10 +17,8 @@ public class Actividad1 {
             }
         } while (texto.length() < 30);
 
-        // Convertimos a mayúsculas y reemplazamos espacios por guiones bajos
         String textoFormateado = texto.toUpperCase().replace(" ", "_");
 
-        // Guardamos el texto en un fichero
         try (FileWriter writer = new FileWriter("actividad1.txt")) {
             writer.write(textoFormateado);
             System.out.println("Texto guardado correctamente.");
